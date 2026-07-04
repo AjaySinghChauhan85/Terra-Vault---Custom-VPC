@@ -1,0 +1,15 @@
+Terraform
+  
+  - .terraform/ — provider/module cache
+  - *.tfstate, *.tfstate.backup — state files (contain sensitive data)
+  - *.tfplan — plan output files
+  - *.tfvars — variable files with secrets (but keeps example.tfvars)
+  -  .terraform.lock.hcl - Terraform lock file                                                             
+      
+  
+  Secrets & Keys
+  
+  - *.pem, *.key, *.ppk — private keys
+  - terra-key-ec2, terra-key-ec2.pub — your specific key from main.tf
+  - .env, secrets.tf — environment and secret files
+  - .aws/, credentials — AWS credentials
